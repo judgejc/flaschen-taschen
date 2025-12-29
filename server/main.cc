@@ -78,7 +78,7 @@ bool drop_privs(const char *priv_user, const char *priv_group) {
 static int usage(const char *progname) {
     fprintf(stderr, "usage: %s [options]\n", progname);
     fprintf(stderr, "Options:\n"
-            "\t-D <width>x<height> : Output dimension. Default 45x35\n"
+            "\t-D <width>x<height> : Output dimension. Default 64x64\n"
 #if FT_BACKEND == 2
             "\t--hd-terminal       : Make terminal with higher resolution.\n"
 #else
@@ -93,8 +93,8 @@ static int usage(const char *progname) {
 }
 
 int main(int argc, char *argv[]) {
-    int width = 45;
-    int height = 35;
+    int width = 64;
+    int height = 64;
     int layer_timeout = 15;
 #if FT_BACKEND != 2
     bool as_daemon = false;
