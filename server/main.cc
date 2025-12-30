@@ -12,6 +12,12 @@
 // along with this program.  If not, see <http://gnu.org/licenses/gpl-2.0.txt>
 
 // Flaschen Taschen Server
+//
+// Modified Version 2025 James Crowley (judgejc.net)
+// https://github.com/judgejc/flaschen-taschen
+//
+// 30/12/2025 - Update output dimension default values to 64x64 for Waveshare LED matrix panels.
+//
 
 #include <arpa/inet.h>
 #include <errno.h>
