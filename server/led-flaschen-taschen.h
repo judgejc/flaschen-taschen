@@ -110,7 +110,7 @@ private:
 
 class TerminalFlaschenTaschen : public ServerFlaschenTaschen {
 public:
-    TerminalFlaschenTaschen(int terminal_fd, int width, int heigh);
+    TerminalFlaschenTaschen(int terminal_fd, int width, int height);
     virtual ~TerminalFlaschenTaschen();
     virtual void PostDaemonInit();
 
@@ -141,7 +141,7 @@ protected:
 // Similar, but higher res.
 class HDTerminalFlaschenTaschen : public TerminalFlaschenTaschen {
 public:
-    HDTerminalFlaschenTaschen(int terminal_fd, int width, int heigh);
+    HDTerminalFlaschenTaschen(int terminal_fd, int width, int height);
     virtual void PostDaemonInit();
 
     void SetPixel(int x, int y, const Color &col);
